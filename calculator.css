@@ -1,0 +1,91 @@
+/* Base styles */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.black {
+  width: 90%;
+  max-width: 400px; /* Adjust max-width as needed */
+  height: auto; /* Change height to auto */
+  background-color: rgb(50 48 48);
+  display: flex;
+  justify-content: center;
+  /* align-items: baseline; */
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 100%;
+  height: auto; /* Change height to auto */
+  border-radius: 12px;
+  background-color: rgb(82, 80, 80);
+  padding: 20px;
+}
+
+.row {
+  margin: 8px 2px;
+}
+
+.button {
+  width: 75px;
+  padding: 5px 0px;
+  border: 1px solid black;
+  border-radius: 12px;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.equal {
+  background-color: #fc9d0b;
+  color: white;
+}
+
+.input {
+  display: flex;
+  width: 90%;
+  text-align: center;
+  padding: 10px 0px; /* Increase padding for better touch interaction */
+  border: 2px solid #a3b3a4;
+  border-radius: 12px;
+  font-size: 2em; /* Adjust font size */
+  margin: 20px auto 0px;
+  background-color: #cddecc;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  /* Adjustments for smaller screens */
+  .button {
+    width: 60px; /* Reduce button width */
+    font-size: 20px; /* Reduce font size for buttons */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Further adjustments for very small screens */
+  .black {
+    padding: 10px; /* Reduce padding for smaller container */
+  }
+
+  .input {
+    font-size: 1.5em; /* Further reduce font size for smaller screens */
+  }
+}
